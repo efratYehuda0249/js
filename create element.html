@@ -1,0 +1,35 @@
+<html>
+<form action="">
+
+</form>
+
+</html>
+<script>
+    for (let i = 0; i < 3; i++) {
+        let s = `<button class="circle">${i}</button>`
+        document.getElementsByTagName('form')[0].innerHTML += s
+    }
+    let b = document.createElement('Button')
+    b.setAttribute('class', 'circle')
+    b.innerHTML="one"
+    document.getElementsByTagName('form')[0].appendChild(b)
+</script>
+<style>
+    .circle {
+        background-color: brown;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-left: 2px;
+    }
+</style>
+
+<html>
+    <button (click)="ok(event)"></button>
+</html>
+<script>
+    ok(e)
+    {
+        alert(e.target.id)
+    }
+</script>
